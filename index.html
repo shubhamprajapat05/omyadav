@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Om Kumar Yadav - Official Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h5>OM KUMAR YADAV</h5>
+      </div>
+      <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+      </div>
+      <div class="toggle-button">&#9776;</div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header-text">
+      <h2>I'm Om Kumar Yadav</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quisquam mollitia autem
+        voluptates rerum obcaecati? Sapiente vel dicta neque facere expedita?
+      </p>
+    </div>
+  </header>
+
+  <section id="introduction-section" class="introduction-section">
+    <div class="intro-container">
+      <div class="intro-image">
+        <img src="om.png" alt="Introduction Image" />
+      </div>
+      <div class="intro-text">
+        <h2>About Om</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          voluptate eveniet illum laborum adipisci nam voluptates voluptas
+          sapiente quasi. Pariatur voluptatum corporis repellat est nostrum,
+          rerum veritatis. Facere deleniti porro aliquid beatae repellat eos.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          fuga adipisci.
+        </p>
+        <br />
+        <p>
+          voluptatum aperiam sed autem iusto. Sequi quo itaque sed. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+          sapiente, voluptatem dignissimos soluta accusamus enim. Consequuntur
+          ipsa a non illo sint! Fuga rerum, hic, repellendus esse dignissimos
+          molestiae dolorum soluta impedit necessitatibus fugiat eius natus
+          dicta laudantium autem nisi distinctio molestias similique
+          cupiditate voluptatem inventore quaerat qui illo?
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="social-section">
+    <div class="social-container">
+      <h2 class="social-heading">Connect with me on</h2>
+      <p class="social-paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/yadavom_kvian/" target="_blank" class="social-icon-link">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="social-icon-name">Instagram</span>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-icon-link">
+          <i class="fa-brands fa-linkedin"></i>
+          <span class="social-icon-name">LinkedIn</span>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon-link">
+          <i class="fa-brands fa-twitter"></i>
+          <span class="social-icon-name">Twitter</span>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon-link">
+          <i class="fa-brands fa-facebook"></i>
+          <span class="social-icon-name">Facebook</span>
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="social-icon-link">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="social-icon-name">Whatsapp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <div class="newsletter-left">
+        <h2>💌 Send a message to me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio libero dolor deserunt, nemo error doloremque repudiandae, similique quia, facilis consequatur obcaecati praesentium iure?
+        </p>
+      </div>
+      <div class="newsletter-right">
+        <form onsubmit="sendEmail(); reset(); return false;" class="newsletter-form" />
+        <input type="text" id="message" name="message" placeholder="Your message" required />
+        <input type="email" id="email" name="email" placeholder="Enter email" required />
+        <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="main-footer">
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Connect with me</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/yadavom_kvian" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 OM KUMAR YADAV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "message@omyadav.com",
+        Password: "3892B79B504996AA59B8C4A058381F75BDF9",
+        To: 'omkumaryadav2003@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Message",
+        Body: "Message: " + document.getElementById("message").value
+          + " <br> From: " + document.getElementById("email").value,
+      }).then(
+        message => alert("Message successfully sent.")
+      );
+    }
+  </script>
+</body>
+
+</html>
